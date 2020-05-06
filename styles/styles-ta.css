@@ -117,8 +117,13 @@ h1 {
 .media-p-font {
   font-size: 2rem;
 }
-section {
+
+h1 {
   text-align: center;
+}
+
+section {
+  text-align: left;
 }
 
 .content {
