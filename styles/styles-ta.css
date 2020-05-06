@@ -1,0 +1,170 @@
+html {
+  font-size: 10px;
+}
+
+main, nav, section, aside, footer {
+    margin: 0;
+    padding: 2rem;
+    color: #000;
+    font-style: 'Josefin Sans', sans-serif;
+}
+
+main {
+    background: #fff;
+}
+
+
+/* header */
+
+.nav-box {
+/* nothing required for now */
+}
+
+
+/* Toggle checkbox and drop menu down */
+
+input[type=checkbox] {
+  display: none;
+}
+
+.ul-dropdown {
+  display: none;
+}
+
+input[type=checkbox]:checked ~ ul {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* Style for dropdown menu button and menu list */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 0;
+}
+
+.logo-box {
+  padding: 2rem;
+}
+
+.dropdown {
+  padding: 2rem;
+  }
+
+.dropdown-right {
+  text-align: right;
+}
+
+.menu-btn {
+  writing-mode: vertical-rl;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.ul-dropdown {
+/* nothing required for now */
+}
+
+.ul-dropdown li {
+  padding: .5rem;
+  font-size: 2rem;
+  margin-bottom: 0;
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+/* Style for dropdown menu links */
+
+.a-dropdown {
+  text-decoration: none;
+  padding: 2px;
+
+  transition: color 0.3s ease;
+}
+
+.a-dropdown:link {
+  color: #000;
+}
+
+a:visited {
+  color: #000;
+}
+
+.a-dropdown:focus {
+  border-top: 2px solid red;
+}
+
+.a-dropdown:hover {
+  color: #f00;
+}
+
+.a-dropdown:active {
+  color: #f00;
+}
+
+
+/* content */
+
+h1 {
+  font-size: 3rem;
+}
+
+.media-p-font {
+  font-size: 2rem;
+}
+section {
+  text-align: center;
+}
+
+.content {
+    background: #fff;
+}
+
+
+/* sidebar */
+
+.sidebar {
+    background: #fff;
+}
+
+
+/* content and sidebar for tablet */
+
+@media screen and (min-width: 640px){
+    .flex-container {
+        display: flex;
+    }
+}
+
+.content {
+    flex: 1;
+}
+
+.sidebar {
+    display: flex;
+    flex: 0 1 300px;
+    justify-content: center;
+}
+
+
+/* content and sidebar for desktop */
+
+.wrapper {
+    margin: auto;
+    max-width: 75rem;
+}
+
+
+/* footer */
+
+.footer {
+    margin-top: 2rem;
+    padding: 0;
+    border-top: 1px solid #000;
+    background: #fff;
+}
