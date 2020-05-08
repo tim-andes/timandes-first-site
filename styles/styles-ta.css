@@ -1,12 +1,13 @@
 html {
   font-size: 10px;
+  font-family: 'Josefin Sans', sans-serif;
+  box-sizing: border-box;
 }
 
 main, nav, section, aside, footer {
     margin: 0;
     padding: 2rem;
     color: #000;
-    font-style: 'Josefin Sans', sans-serif;
 }
 
 main {
@@ -14,15 +15,7 @@ main {
 }
 
 
-/* header */
-
-.nav-box {
-/* nothing required for now */
-}
-
-
 /* Toggle checkbox and drop menu down */
-
 input[type=checkbox] {
   display: none;
 }
@@ -31,28 +24,27 @@ input[type=checkbox] {
   display: none;
 }
 
+
 input[type=checkbox]:checked ~ ul {
   display: flex;
   flex-direction: column;
+  position: absolute;
+  right: 6rem;
 }
 
 
 /* Style for dropdown menu button and menu list */
-
 nav {
   display: flex;
   justify-content: space-between;
   padding: 1rem;
-  margin: 0;
+  margin: 0 auto;
 }
 
-.logo-box {
-  padding: 2rem;
-}
-
+.logo-box,
 .dropdown {
   padding: 2rem;
-  }
+}
 
 .dropdown-right {
   text-align: right;
@@ -64,22 +56,24 @@ nav {
   font-weight: bold;
 }
 
-.ul-dropdown {
-/* nothing required for now */
-}
-
 .ul-dropdown li {
   padding: .5rem;
   font-size: 2rem;
-  margin-bottom: 0;
+}
 
+.ul-dropdown-flex li {
   display: flex;
   justify-content: flex-end;
 }
 
 
 /* Style for dropdown menu links */
-
+.ul-dropdown-bg li {
+  background-color: #fff;
+  -webkit-box-shadow: 2px 6px 21px -2px rgba(0,0,0,0.20);
+  -moz-box-shadow: 2px 6px 21px -2px rgba(0,0,0,0.20);
+  box-shadow: 2px 6px 21px -2px rgba(0,0,0,0.20);
+}
 .a-dropdown {
   text-decoration: none;
   padding: 2px;
@@ -109,56 +103,41 @@ a:visited {
 
 
 /* content */
-
-h1 {
-  font-size: 3rem;
-}
-
-.media-p-font {
-  font-size: 2rem;
-}
-
-h1 {
-  text-align: center;
-}
-
-section {
-  text-align: left;
-}
-
 .content {
-    background: #fff;
+    flex: 1;
+    padding: 0;
+}
+
+.content-font {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+.header-name {
+  font-size: 3rem;
+  margin: 0;
+  text-align: center;
 }
 
 
 /* sidebar */
-
 .sidebar {
-    background: #fff;
+    flex: 0 1 300px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
 }
 
 
 /* content and sidebar for tablet */
-
 @media screen and (min-width: 640px){
     .flex-container {
         display: flex;
     }
 }
 
-.content {
-    flex: 1;
-}
-
-.sidebar {
-    display: flex;
-    flex: 0 1 300px;
-    justify-content: center;
-}
-
 
 /* content and sidebar for desktop */
-
 .wrapper {
     margin: auto;
     max-width: 75rem;
@@ -166,10 +145,8 @@ section {
 
 
 /* footer */
-
 .footer {
     margin-top: 2rem;
-    padding: 0;
-    border-top: 1px solid #000;
+    border-top: 1px solid black;
     background: #fff;
 }
