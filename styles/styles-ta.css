@@ -4,10 +4,11 @@ html {
   box-sizing: border-box;
 }
 
-main, nav, section, aside, footer {
+main, section, aside, footer {
     margin: 0;
     padding: 2rem;
     color: #000;
+/* removed nav from this */  
 }
 
 main {
@@ -37,8 +38,8 @@ input[type=checkbox]:checked ~ ul {
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
   margin: 0 auto;
+  /* removed padding: 1rem; */
 }
 
 .logo-box {
