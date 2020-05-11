@@ -4,7 +4,7 @@ html {
   box-sizing: border-box;
 }
 
-main, section, aside, footer {
+main, nav, section, aside, footer {
     margin: 0;
     padding: 2rem;
     color: #000;
