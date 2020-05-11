@@ -43,7 +43,7 @@ nav {
 
 .logo-box,
 .dropdown {
-  /* removed padding: 2rem; to align symmetrically */
+  padding: 2rem;
 }
 
 .dropdown-right {
