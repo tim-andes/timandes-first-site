@@ -4,10 +4,11 @@ html {
   box-sizing: border-box;
 }
 
-main, nav, section, aside, footer {
+main, section, aside, footer {
     margin: 0;
     padding: 2rem;
     color: #000;
+    /* removed nav */
 }
 
 main {
