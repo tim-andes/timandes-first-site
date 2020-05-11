@@ -41,9 +41,12 @@ nav {
   margin: 0 auto;
 }
 
-.logo-box,
-.dropdown {
+.logo-box {
   padding: 2rem 0;
+}
+
+.dropdown {
+  padding: 2rem;
 }
 
 .dropdown-right {
