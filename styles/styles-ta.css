@@ -1,37 +1,33 @@
+* {
+  box-sizing: border-box;
+  }
+
 html {
   font-size: 10px;
   font-family: 'Josefin Sans', sans-serif;
-  box-sizing: border-box;
-}
+  }
 
 main, section, aside, footer {
     margin: 0;
     padding: 2rem;
     color: #000;
-    /* removed nav */
-}
+    }
 
 main {
     background: #fff;
-}
-
+    }
 
 /* Toggle checkbox and drop menu down */
-input[type=checkbox] {
-  display: none;
-}
-
+input[type=checkbox],
 .ul-dropdown {
   display: none;
 }
 
-
 input[type=checkbox]:checked ~ ul {
   display: flex;
   flex-direction: column;
-  position: absolute;
+  position: fixed;
   right: 3rem;
-  /* need possible fix here or in @media to adjust for dropdown/menu icon alignment issue */
 }
 
 
@@ -39,16 +35,11 @@ input[type=checkbox]:checked ~ ul {
 nav {
   display: flex;
   justify-content: space-between;
-  /* removed padding: 1rem; */
-  /* removed margin: 0 auto; */
 }
 
-.logo-box {
-  padding: 2rem 0;
-}
-
+.logo-box,
 .dropdown {
-  padding: 2rem 0;
+padding: 0;
 }
 
 .dropdown-right {
@@ -86,26 +77,16 @@ nav {
   transition: color 0.3s ease;
 }
 
-.a-dropdown:link {
-  color: #000;
-}
-
+.a-dropdown:link,
 a:visited {
   color: #000;
 }
 
+.a-dropdown:hover,
+.a-dropdown:active,
 .a-dropdown:focus {
-  border-top: 2px solid red;
-}
-
-.a-dropdown:hover {
   color: #f00;
 }
-
-.a-dropdown:active {
-  color: #f00;
-}
-
 
 /* content */
 .content {
@@ -120,7 +101,6 @@ a:visited {
 
 .header-name {
   font-size: 3rem;
-  margin: 0;
   text-align: center;
 }
 
@@ -141,17 +121,19 @@ a:visited {
     }
 }
 
-
 /* content and sidebar for desktop */
 .wrapper {
     margin: auto;
     max-width: 75rem;
 }
 
-
 /* footer */
 .footer {
     margin-top: 2rem;
     border-top: 1px solid black;
     background: #fff;
+}
+
+.footer p {
+  font-size: 1.1rem;
 }
