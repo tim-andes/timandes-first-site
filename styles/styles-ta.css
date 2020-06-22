@@ -1,3 +1,8 @@
+/* TO DO 
+- get height to auto-fill. Right now, everything is crammed at top of display on large browser 
+- clean up CSS and reformat with BEM
+*/
+
 * {
   box-sizing: border-box;
   }
